@@ -1,10 +1,7 @@
-let añoNacimiento = prompt('En que año naciste?');
-let añoActual = '2021';
+let numero = prompt('En que año naciste?');
 
-let añoAlcohol = +añoActual - +añoNacimiento;
-
-if (añoAlcohol < 18) {
-    alert('No puede comprar alcohol');
-} else if (añoAlcohol >= 18) {
-    alert ('Puede comprar alcohol')
+if ((numero >= 10) && (numero <=50)) {
+    alert('Aceptable');
+} else {
+    alert ('No Aceptable')
 }
