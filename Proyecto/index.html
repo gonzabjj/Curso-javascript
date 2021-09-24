@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/Curso-javascript/Proyecto/js/variable.js"></script>
     <script src="/Curso-javascript/Proyecto/js/function.js"></script>
+    <script src="/Curso-javascript/Proyecto/js/filter.js"></script>
     <script src="/Curso-javascript/Proyecto/js/main.js"></script>
     <link rel="stylesheet" href="estilo.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
@@ -18,13 +19,17 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div class="nav__toggle">
-                <i class='bx bx-grid-alt'></i>
+                <i class='bx bxs-grid-alt'></i>
             </div>
+            
+            <a href="" class="nav__logo">Vinoteca</a>
 
-            <a href="" class="nav__logo">PESHKU</a>
             <div class="nav__menu">
-                <ul class="nav__menu">
+                <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">Nacionales</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">Clasicos</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">Importados</a></li>
                     <li class="nav__item"><a href="contact.html" class="nav__link">Contacto</a></li>                    
                 </ul>
             </div>
@@ -32,8 +37,24 @@
                 <i class='bx bx-shopping-bag' ></i>
             </div>
         </nav>
-
     </header>
+    <main class="l-main">
+        <section class="home">
+            <div class="home__container bd-grid">
+                <div class="home__pesh">
+                    <div class="home__peshku"></div>
+                    <img src="img/Gin-Bulldog_adobespark.png" alt="" width="200px" class="home__img">
+                </div>
+                <div class="home__data">
+                    <span class="home__new">Nuevos Productos</span>
+                    <h1 class="home__tittle">Nuevos!</h1>
+                    <p class="home__description">Vea nuestro nuevos Productos</p>
+                    <a href="#" class="button">Explorar</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>
