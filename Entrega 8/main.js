@@ -1,7 +1,4 @@
-const selectQty = `Cantidad`
-
-
-let products = [
+const products = [
     {id: 1, nombre: "Bulldog", price: 3280, stock:10},
     {id: 2, nombre: "Casa Rosa", price: 1230, stock:50},
     {id: 3, nombre: "Beefeater 750cc", price: 2245, stock:40},
@@ -18,7 +15,12 @@ let products = [
     {id: 14, nombre: "Restinga Botellon", price: 4690, stock:12},
     {id: 15, nombre: "Tanqueray", price: 2280, stock:7},
 ]; 
+console.log(products)
 
-let cart = 0;
-
-let resp = 'S';
+for (const producto of products) {
+    let contenedor = document.createElement("div");
+    contenedor.innerHTML = `<h3> ID: ${producto.id}</h3>
+                            <p>  Producto: ${producto.nombre}</p>
+                            <b> $ ${producto.precio}</b>`;
+    document.body.appendChild(contenedor);
+}
